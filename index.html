@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="upper-band">
-        Player name : <span class="player-name"> O</span>
+        Player name : <span class="player-name"></span>
     </div>
     <div class="game-board">
-        <div class="board-cell">X</div>
-        <div class="board-cell"></div>
-        <div class="board-cell"></div>
-        <div class="board-cell"></div>
-        <div class="board-cell">O</div>
-        <div class="board-cell"></div>
-        <div class="board-cell"></div>
-        <div class="board-cell"></div>
-        <div class="board-cell"></div>
+        <div class="board-cell board-cell-0">-</div>
+        <div class="board-cell board-cell-1">-</div>
+        <div class="board-cell board-cell-2">-</div>
+        <div class="board-cell board-cell-3">-</div>
+        <div class="board-cell board-cell-4">-</div>
+        <div class="board-cell board-cell-5">-</div>
+        <div class="board-cell board-cell-6">-</div>
+        <div class="board-cell board-cell-7">-</div>
+        <div class="board-cell board-cell-8">-</div>
     </div>
     <div class="lower-band">
-        <button class="start-button"> Start </button>
-        <div class="winner">Winner is : <span> O</span></div>
+        <button class="start-button" onclick="clear_board()"> Start / Restart </button>
+        <div class="winner"><p>Last Winner is : <span class="winner-player"></span></p></div>
     </div>
     <div class="footer">
         Copyright © Rahim Dashti
